@@ -3,7 +3,7 @@ import axios from "axios"
 
 export const GetPageValidStatus = async(pageId) => {
     try {
-        const result = await axios.get(`http://localhost:3001/notion/page/${pageId}`, {
+        const result = await axios.get(`https://graph-notion-backend.vercel.app/notion/page/${pageId}`, {
             method: "GET"
         })
 
@@ -19,7 +19,7 @@ export const GetPageValidStatus = async(pageId) => {
 
 export const GetPageInfo = async(pageId) => { //fetching basic notion page information
     try {
-        const result = await axios.get(`http://localhost:3001/notion/page/info/${pageId}`, {
+        const result = await axios.get(`https://graph-notion-backend.vercel.app/notion/page/info/${pageId}`, {
             method:"GET"
         })
         
@@ -34,7 +34,7 @@ export const GetPageInfo = async(pageId) => { //fetching basic notion page infor
 
 export const GetBlockInfo = async(blockId) => { //fetch all blocks in page
     try {
-        const result = await axios.get(`http://localhost:3001/notion/page/block/info/${blockId}`, {
+        const result = await axios.get(`https://graph-notion-backend.vercel.app/notion/page/block/info/${blockId}`, {
             method:"GET"
         })
         
@@ -48,7 +48,7 @@ export const GetBlockInfo = async(blockId) => { //fetch all blocks in page
 
 export const GetPageContent = async(blockId) => { // formulate page content as well as relative links to each word
     try {
-        const result = await axios.get(`http://localhost:3001/notion/page/block/content/${blockId}`, {
+        const result = await axios.get(`https://graph-notion-backend.vercel.app/notion/page/block/content/${blockId}`, {
             method: "GET"
         })
 
@@ -62,7 +62,7 @@ export const GetPageContent = async(blockId) => { // formulate page content as w
 
 export const getUsername = async(user_id) => { //getting username from user_id
     try {
-        const result = await axios.get(`http://localhost:3001/notion/user/${user_id}`, {
+        const result = await axios.get(`https://graph-notion-backend.vercel.app/notion/user/${user_id}`, {
             method: "GET"
         })
 
@@ -75,7 +75,7 @@ export const getUsername = async(user_id) => { //getting username from user_id
 
 export const getTitles = async(pageArray) => {  //getting page titles based on page id
     try {
-        const result = await axios.get(`http://localhost:3001/notion/page/title/${pageArray}`, {
+        const result = await axios.get(`https://graph-notion-backend.vercel.app/notion/page/title/${pageArray}`, {
             method: "GET"
         })
 

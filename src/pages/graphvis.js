@@ -228,7 +228,7 @@ export default function GraphVis(props) {
                     
                     
                     <div>
-                        <Text marginLeft='10px' fontSize='5xl' as='b'>{user_details['name']}'s Notion</Text>
+                        <Text marginLeft='10px' fontSize='5xl' as='b'>{user_details['name']}&apos; s Notion</Text>
                     </div>
                     </div>
                 
@@ -260,12 +260,13 @@ export default function GraphVis(props) {
                                                                 <div>
                                                                     {Object.keys(blockStructure).map((parent_page, index) => {
                                                                         return (
-                                                                        <div>
+                                                                        <div key={index}>
                                                                         <Stack direction='column'>
                                                                             
                                                                             <Text color='white'>{pageTitles[parent_page][0]}</Text>
                                                                             {blockStructure[parent_page].map((child_page, index) => {
                                                                                 return (
+                                                                                <div key={index}>
                                                                                 <Stack direction='row' h='80px' p={4}>
                                                                                 
                                                                                     <Divider orientation='vertical' />
@@ -274,6 +275,7 @@ export default function GraphVis(props) {
                                                                                         
                                                                                     
                                                                                 </Stack>
+                                                                                </div>
                                                                                 )
                                                                             })}
                                                                                 
@@ -316,20 +318,22 @@ export default function GraphVis(props) {
                                                                 <div>
                                                                     {Object.keys(blockStructure).map((parent_page, index) => {
                                                                         return (
-                                                                        <div>
+                                                                        <div key={index}>
                                                                         <Stack direction='column'>
                                                                             
                                                                             <Text color='black'>{pageTitles[parent_page][0]}</Text>
                                                                             {blockStructure[parent_page].map((child_page, index) => {
                                                                                 return (
-                                                                                <Stack direction='row' h='80px' p={4}>
-                                                                                
-                                                                                    <Divider orientation='vertical' />
+                                                                                <div key={index}>
+                                                                                    <Stack direction='row' h='80px' p={4}>
                                                                                     
-                                                                                        <Text color='black'>{pageTitles[child_page][0]}</Text>
+                                                                                        <Divider orientation='vertical' />
                                                                                         
-                                                                                    
-                                                                                </Stack>
+                                                                                            <Text color='black'>{pageTitles[child_page][0]}</Text>
+                                                                                            
+                                                                                        
+                                                                                    </Stack>
+                                                                                </div>
                                                                                 )
                                                                             })}
                                                                                 
