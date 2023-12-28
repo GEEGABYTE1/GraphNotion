@@ -18,7 +18,7 @@ import theme from './api/theme';
 
 
 
-export function ForceNetworkGraph(props) {
+export default function ForceNetworkGraph(props) {
   const svgRef = useRef();
   const frameSize = { width: 1700, height: 850 };
   const [nodeArray, setNodeArray] = useState([])
