@@ -14,7 +14,7 @@ import { MoonIcon, SunIcon, ChevronRightIcon, CloseIcon } from '@chakra-ui/icons
 import { GetBlockInfo, GetPageContent, GetPageInfo, getUsername, getTitles } from './api/notion'
 
 //Component Import 
-import {ForceNetworkGraph} from '../pages/renderGraph'
+import ForceNetworkGraph from '../pages/renderGraph'
 
 
 
