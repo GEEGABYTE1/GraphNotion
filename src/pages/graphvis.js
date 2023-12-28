@@ -111,7 +111,7 @@ export default function GraphVis(props) {
             var result = await GetBlockInfo(pageId)
             console.log("Block Result: ", result)
             if (result === undefined) {
-                setUndefinedStatus(true)
+                //setUndefinedStatus(true)
             }
             setBlockStructure(result)
             // testing
