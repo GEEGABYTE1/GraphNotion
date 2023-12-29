@@ -43,7 +43,7 @@ export default function Home() {
         <div>
         <div style={{display: 'flex', position: 'absolute', top:'0', right:'0', margin:'5px'}}>
         <div style={{marginRight: '10px', marginTop:'5px'}}>
-          <Link href='/'><Text as='b'>Reference</Text></Link>
+          <Link href='https://cooked-comma-304.notion.site/Reference-Doc-d036088c046347c48ccf69b9f3a0053b?pvs=4'><Text as='b'>Reference</Text></Link>
         </div>
         <div className={styles.colorModeButtonIndex}>
         {

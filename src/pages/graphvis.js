@@ -183,7 +183,7 @@ export default function GraphVis(props) {
                             </Select>
                         </div>
                             <div style={{marginTop:'5px'}}>
-                                <Link href='/'>
+                                <Link href='https://cooked-comma-304.notion.site/Reference-Doc-d036088c046347c48ccf69b9f3a0053b?pvs=4'>
                                     <Text>Reference</Text>
                                 </Link>
                             </div>
