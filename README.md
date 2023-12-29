@@ -1,4 +1,4 @@
-#GraphNotion
+# GraphNotion
 
 Repository for the frontend. 
 
